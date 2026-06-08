@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Showcase | Husna Firyal Az-Zahra</title>
+  <meta name="description" content="Detailed showcase of engineering and DevOps projects by Husna Firyal Az-Zahra (Una).">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Atmospheres -->
+  <div class="bg-glow bg-glow-teal" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-amber" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Ribbon / Navbar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        husnafiryal<span class="logo-dot">.</span>github.io
+      </a>
+      
+      <!-- Desktop Menu -->
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay Menu -->
+  <div class="nav-mobile" aria-hidden="true">
+    <nav class="nav-mobile-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Main Layout -->
+  <main class="main-content">
+    
+    <!-- Projects Header Section -->
+    <section class="section projects-hero">
+      <div class="container" style="text-align: center; padding-top: 4rem; padding-bottom: 2rem;">
+        <h1 class="section-title" style="margin-bottom: 1rem;">Engineering Showcase & Case Studies</h1>
+        <p class="section-subtitle" style="max-width: 700px; margin: 0 auto 3rem auto; color: var(--text-secondary);">
+          Explore a comprehensive archive of my projects spanning automated cloud-native DevOps pipelines, serverless workflows, mobile applications, and academic IoT research.
+        </p>
+
+        <!-- Category Filter Buttons -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="devops">DevOps & CI/CD</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Dev</button>
+          <button class="filter-btn" data-filter="academic">Academic & IoT</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="section projects-grid-section" style="padding-top: 0;">
+      <div class="container">
+        <div class="projects-showcase-grid">
+          
+          <!-- Project 1: Capstone FMCW Radar System -->
+          <div class="glass-card project-grid-card" data-category="academic">
+            <div class="project-header">
+              <span class="project-badge">Academic Capstone</span>
+              <h3>Millimeter Wave FMCW Radar River Telemetry System</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Manual river monitoring is hazardous, labor-intensive, and fails to provide automated real-time tracking of water levels and flow velocity during severe weather events.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Designed a non-contact FMCW radar system that accurately estimates surface height and water velocity under diverse environmental conditions.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>FMCW Radar</span>
+                  <span>Signal Processing</span>
+                  <span>Python</span>
+                  <span>Linux</span>
+                  <span>IoT Telemetry</span>
+                  <span>Data Logging</span>
+                  <span>Fourier Transform</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-1-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Deployed a millimeter-wave FMCW radar system running Python scripts on a local unit to extract frequency beat signals. Applied Fast Fourier Transform (FFT) and spectral analysis to calculate distance (surface height) and Doppler frequency shift (water flow velocity).</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Calculated non-contact water distance telemetry using high-resolution radar reflection frequencies.</li>
+                  <li>Derived surface velocity measurements from phase change rates using the Doppler effect.</li>
+                  <li>Configured local SQLite databases for continuous local logging and telemetry storage.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-1-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: Mobile Application with Flutter -->
+          <div class="glass-card project-grid-card" data-category="mobile">
+            <div class="project-header">
+              <span class="project-badge">Mobile Dev</span>
+              <h3>Cross-Platform Mobile Application for Student Collaboration</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Students face fragmented communication channels and scheduling friction, leading to delayed academic task updates and lab reservation conflicts.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Delivered an intuitive, responsive mobile application for Android and iOS that centralizes task management and coordinates team schedules.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Dart</span>
+                  <span>REST APIs</span>
+                  <span>OAuth2</span>
+                  <span>State Management</span>
+                  <span>UI/UX Design</span>
+                  <span>Android & iOS</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-2-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Developed a cross-platform mobile frontend in Flutter utilizing Dart. Integrated secure OAuth2 token authentication, dynamic dashboard states, calendar reservation bindings, and structured REST API communication with the backend.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Designed highly responsive material components fitting diverse device screen sizes.</li>
+                  <li>Implemented clean application architecture separating view states from business logic.</li>
+                  <li>Optimized local caching for task schedules to maintain offline accessibility.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-2-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3: Serverless Workflow Automation using n8n -->
+          <div class="glass-card project-grid-card" data-category="automation">
+            <div class="project-header">
+              <span class="project-badge">Automation</span>
+              <h3>Automated Laboratory Operations & Telemetry Sync</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Manual administrative tasks (confirming laboratory bookings, notifying team members, and syncing device telemetry) create significant operational delays.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Created automated event-driven workflows that reduced administrative communication latencies from hours to seconds.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>n8n</span>
+                  <span>Webhooks</span>
+                  <span>REST APIs</span>
+                  <span>JSON Parsing</span>
+                  <span>Slack API</span>
+                  <span>Telegram Bot API</span>
+                  <span>Cron Triggers</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-3-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Designed and hosted event-driven n8n automation workflows. Configured webhooks to listen for new reservation requests, parse incoming payloads, notify team members via automated Slack and Telegram channels, and trigger database updates.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Built resilient API payload mapping templates to parse JSON telemetry data dynamically.</li>
+                  <li>Configured scheduled cron jobs to audit system states and send warning alerts.</li>
+                  <li>Automated reservation confirmations with direct calendar sync integrations.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-3-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4: Centralized GitLab CI/CD Pipeline -->
+          <div class="glass-card project-grid-card" data-category="devops">
+            <div class="project-header">
+              <span class="project-badge">DevOps Flagship</span>
+              <h3>Centralized GitLab CI/CD Pipeline for Kubernetes Deployment</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Deploying containerized workloads to Kubernetes manually or through fragmented scripts leads to high deployment error rates, insecure secrets handling, and high operation latency across branch environments.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Enforced reproducible template pipelines across branches, securing variables, automating rollout deployments via CLI, and establishing ingress domain exposure within seconds.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>GitLab CI/CD</span>
+                  <span>Docker</span>
+                  <span>GitLab Container Registry</span>
+                  <span>Kubernetes</span>
+                  <span>K3s</span>
+                  <span>Traefik Ingress</span>
+                  <span>Linux</span>
+                  <span>YAML</span>
+                  <span>Secrets</span>
+                  <span>ImagePullSecret</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-4-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Built a reusable centralized CI/CD pipeline using GitLab CI/CD to automate Docker image build, push to GitLab Container Registry, Kubernetes manifest injection, ImagePullSecret creation, and deployment to a K3s Kubernetes cluster.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li><strong>Reusable Pipeline Templates:</strong> Parameterized jobs for staging, testing, and deployment to decouple config overrides from scripts.</li>
+                  <li><strong>Dynamic Manifest Patching:</strong> Utilized `envsubst` to inject variables dynamically during pipeline evaluation.</li>
+                  <li><strong>Secure Access:</strong> Generated transient `ImagePullSecret` tokens to safely pull private images inside K3s.</li>
+                  <li><strong>Rollout Controls:</strong> Enforced automated `kubectl rollout restart` and status loops to ensure application availability.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-4-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5: Kubernetes Orchestration -->
+          <div class="glass-card project-grid-card" data-category="devops">
+            <div class="project-header">
+              <span class="project-badge">Workload Orchestration</span>
+              <h3>High-Availability Kubernetes App Deployment with Traefik Ingress</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Deploying single-instance container workloads exposes applications to single-point-of-failure downtimes during node restarts, high traffic, or runtime crashes.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Achieved zero-downtime rolling updates and failover protection, verifying node statuses and service endpoints natively via CLI.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>Kubernetes</span>
+                  <span>K3s</span>
+                  <span>Traefik</span>
+                  <span>Deployment</span>
+                  <span>Service</span>
+                  <span>Ingress</span>
+                  <span>ConfigMap</span>
+                  <span>Secret</span>
+                  <span>Resource Limits</span>
+                  <span>kubectl</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-5-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Deployed a containerized color application to a K3s Kubernetes cluster using Deployment, Service, ConfigMap/Secret, resource limits, 3 replicas, and Traefik Ingress.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Scaled pods to 3 replicas with Anti-Affinity rules for cluster resilience.</li>
+                  <li>Designed resource request limits (CPU and Memory) to prevent node overload.</li>
+                  <li>Exposed app via Traefik Ingress with custom hostname bindings.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-5-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6: Docker Compose Auth App -->
+          <div class="glass-card project-grid-card" data-category="devops">
+            <div class="project-header">
+              <span class="project-badge">Database & Containerization</span>
+              <h3>Dockerized Python Authentication App with PostgreSQL</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Local database and app instances frequently encounter environment discrepancies, dependency failures, and database boot latency timing-out the main application during startup.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Unified local development environments, preventing data loss during containers rebuild and exposing local services securely.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>Docker</span>
+                  <span>Docker Compose</span>
+                  <span>Python</span>
+                  <span>PostgreSQL 15</span>
+                  <span>Docker Network</span>
+                  <span>Docker Volume</span>
+                  <span>Environment Variables</span>
+                  <span>Healthcheck</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-6-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Containerized a Python authentication app using Dockerfile and Docker Compose, connected it to PostgreSQL 15, configured Docker network, volume, environment variables, and database healthcheck.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Optimized multi-stage Docker build to reduce production image size.</li>
+                  <li>Secured persistent data using named Docker volumes for PostgreSQL 15.</li>
+                  <li>Implemented db readiness check via `pg_isready` before launching the app.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-6-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 7: Linux Troubleshooting -->
+          <div class="glass-card project-grid-card" data-category="devops">
+            <div class="project-header">
+              <span class="project-badge">Linux & Triage</span>
+              <h3>Linux Infrastructure Troubleshooting Labs</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Production system incidents—such as depleted disk volumes, CPU-bound freezes, connection timeouts, and DNS resolution failures—frequently cause application downtime.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Restored system uptime and verified configuration settings, establishing system validation procedures for future deployments.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>Linux</span>
+                  <span>systemctl</span>
+                  <span>journalctl</span>
+                  <span>df</span>
+                  <span>du</span>
+                  <span>ncdu</span>
+                  <span>top</span>
+                  <span>htop</span>
+                  <span>ps</span>
+                  <span>pidstat</span>
+                  <span>mpstat</span>
+                  <span>free</span>
+                  <span>pmap</span>
+                  <span>nginx</span>
+                  <span>ss</span>
+                  <span>curl</span>
+                  <span>dig</span>
+                  <span>mtr</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-7-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Completed infrastructure troubleshooting labs covering disk full incidents, high CPU usage, memory leak simulation, nginx connection refused, and API network latency analysis.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Troubleshooting Mindset & Highlights</span>
+                <div class="mindset-flow">
+                  <span>Reproduce issue</span> &rarr; 
+                  <span>Inspect layer</span> &rarr; 
+                  <span>Collect evidence</span> &rarr; 
+                  <span>Identify root cause</span> &rarr; 
+                  <span>Remediate safely</span> &rarr; 
+                  <span>Verify recovery</span>
+                </div>
+                <ul class="highlights-list" style="margin-top: 0.75rem;">
+                  <li>Disk Full: Cleared space by triaging directories with `df -h` and `ncdu`.</li>
+                  <li>CPU/Memory Leak: Analyzed process RSS memory growth using `pmap` and `ps`.</li>
+                  <li>Connection Latency: Debugged nginx status, port bindings via `ss`, and mtr routing.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-7-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 8: Git Branching Workflow -->
+          <div class="glass-card project-grid-card" data-category="devops">
+            <div class="project-header">
+              <span class="project-badge">Git & Shell Scripting</span>
+              <h3>Git Branching Workflow and Basic GitLab CI/CD</h3>
+            </div>
+            <div class="project-summary">
+              <div class="case-study-block">
+                <span class="case-study-label">Problem</span>
+                <p>Concurrent engineering changes without branch controls risk overwriting stable environments, committing syntax bugs, and breaking production pipelines.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Outcome</span>
+                <p>Reduced integration conflicts, validated shell script permissions, and automated version releases via pipeline triggers.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Tech Stack</span>
+                <div class="project-tags">
+                  <span>Git</span>
+                  <span>GitLab</span>
+                  <span>GitLab CI/CD</span>
+                  <span>Bash</span>
+                  <span>Branching Strategy</span>
+                  <span>Tags</span>
+                  <span>Releases</span>
+                </div>
+              </div>
+            </div>
+            <div id="grid-project-8-collapsible" class="project-collapsible">
+              <div class="case-study-block">
+                <span class="case-study-label">Solution</span>
+                <p>Built a GitLab repository workflow using main/dev/uat/feature branches, basic CI/CD stages, semantic commits, shell script fixes, tags, and releases.</p>
+              </div>
+              <div class="case-study-block">
+                <span class="case-study-label">Key Highlights</span>
+                <ul class="highlights-list">
+                  <li>Designed branch protections for staging (`uat`) and production (`main`).</li>
+                  <li>Wrote test, build, and deploy pipeline verification stages.</li>
+                  <li>Debugging shell permissions (`chmod +x`) and shebang path definitions.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-toggle-container">
+              <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-8-collapsible">
+                <span>View Case Study</span>
+                <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-[#020509] border-t border-border-glass py-8 text-center transition-colors duration-300">
+    <div class="container max-w-[1200px] w-90 mx-auto px-4 flex flex-col items-center">
+      <p class="footer-quote italic text-sm text-slate-400 font-medium mb-5">
+        "Automation is not a target, it's a process of continuous improvement."
+      </p>
+      <div class="footer-bottom w-full flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4 border-t border-white/5 pt-4">
+        <p>&copy; 2026 HUSNA FIRYAL - PORTFOLIO</p>
+        <a href="#home" class="hover:text-white transition-colors">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -211,4 +211,29 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(experienceSection);
   }
 
+  // 6. Project Category Filtering (for projects.html)
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectGridCards = document.querySelectorAll('.project-grid-card');
+
+  if (filterBtns.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active class
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filterValue = btn.getAttribute('data-filter');
+        
+        projectGridCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filterValue === 'all' || category === filterValue) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
 });

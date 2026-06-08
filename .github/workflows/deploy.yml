@@ -33,7 +33,7 @@ jobs:
       - name: Stage Production Files
         run: |
           mkdir dist
-          cp index.html style.css app.js profile.jpg dist/
+          cp index.html projects.html style.css app.js profile.jpg dist/
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
