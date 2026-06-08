@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevOps Engineer Portfolio - Husna Firyal Az-Zahra (Una)
 
-## Getting Started
+Welcome! This repository hosts the source code for my professional DevOps Engineer portfolio, live at [husnafiryal.github.io](https://husnafiryal.github.io).
 
-First, run the development server:
+It is designed to showcase my technical capabilities, containerized case studies, CI/CD pipeline implementations, and system triage experience in an interactive, responsive layout.
+
+---
+
+## 🚀 Key Features
+
+*   **Cinematic Dark Theme UI**: Styled with glassmorphism cards, teal glows, amber accents, and custom vertical flowchart styling.
+*   **Interactive Case Study Slider**: Loopable carousel showcasing 5 distinct DevOps projects with expandable details ("View Case Study") to ensure readability without causing page layout jumps.
+*   **Auto-Collapse Observers**: Integrated vanilla JS `IntersectionObserver` that automatically collapses open details when changing slides or scrolling into the **Experience** section.
+*   **DevOps Best-Practice Deployment**: Managed by a custom GitHub Actions CI/CD workflow that automatically builds and deploys staged production assets to GitHub Pages on every push.
+
+---
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── .github/workflows/
+│   └── deploy.yml      # CI/CD GitHub Actions Workflow (stages assets & deploys to Pages)
+├── index.html          # Core markup (semantic HTML5, case-studies structure)
+├── style.css           # Custom stylesheets (glassmorphism grid, transitions, mask vignette)
+├── app.js              # Carousel logic, swipe listeners, scroll observers
+├── profile.jpg         # Hero section background profile image
+└── .gitignore          # Ignores development backups and environment configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack & Tooling
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   **Markup & Styling**: Semantic HTML5, Vanilla CSS3 (Custom Variables, Flexbox, CSS Grid, Mask Image)
+*   **Interactions**: Vanilla ES6 JavaScript (IntersectionObserver API, Swipe Gestures)
+*   **CI/CD & Hosting**: GitHub Actions, GitHub Pages
