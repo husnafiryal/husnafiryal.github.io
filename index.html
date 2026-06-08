@@ -223,12 +223,12 @@
               <div class="project-summary">
                 <div class="case-study-block">
                   <span class="case-study-label">Problem</span>
-                  <p>Deploying containerized workloads to Kubernetes manually or through fragmented scripts leads to high deployment error rates, insecure secrets handling, and high operation latency across branch environments.</p>
+                  <p>Deployment manual ke Kubernetes rawan tidak konsisten, sulit diulang, dan berisiko karena konfigurasi pipeline, credential, dan manifest bisa tersebar di banyak tempat.</p>
                 </div>
                 
                 <div class="case-study-block">
                   <span class="case-study-label">Outcome</span>
-                  <p>Enforced reproducible template pipelines across branches, securing variables, automating rollout deployments via CLI, and establishing ingress domain exposure within seconds.</p>
+                  <p>Pipeline berhasil berjalan pada branch alpha dengan stage build dan deploy berstatus passed. Aplikasi berhasil dideploy ke namespace Kubernetes dan dapat diakses melalui domain una-cicd.apps.k3s.zauqilab.com. Perubahan source code juga berhasil diproses ulang oleh pipeline dan tampil di browser, sehingga deployment automation terbukti berjalan.</p>
                 </div>
 
                 <div class="case-study-block">
@@ -239,11 +239,11 @@
                     <span>GitLab Container Registry</span>
                     <span>Kubernetes</span>
                     <span>K3s</span>
-                    <span>Traefik Ingress</span>
-                    <span>Linux</span>
-                    <span>YAML</span>
-                    <span>Secrets</span>
+                    <span>kubectl</span>
+                    <span>envsubst</span>
+                    <span>Kubernetes Secret</span>
                     <span>ImagePullSecret</span>
+                    <span>Ingress/Traefik</span>
                   </div>
                 </div>
               </div>
@@ -254,7 +254,7 @@
                   <div class="project-info">
                     <div class="case-study-block">
                       <span class="case-study-label">Solution</span>
-                      <p>Built a reusable centralized CI/CD pipeline using GitLab CI/CD to automate Docker image build, push to GitLab Container Registry, Kubernetes manifest injection, ImagePullSecret creation, and deployment to a K3s Kubernetes cluster.</p>
+                      <p>Saya membangun reusable CI/CD pipeline dengan dua repository terpisah: satu repository untuk aplikasi dan satu repository khusus sebagai centralized/general pipeline. Repository aplikasi menggunakan include untuk memanggil pipeline utama, sehingga logic build dan deploy tidak perlu ditulis berulang di setiap project.</p>
                     </div>
                   </div>
                   
@@ -293,17 +293,17 @@
                       </div>
                       <div class="terminal-body">
                         <div class="term-line"><span class="term-info">pipeline: passed</span> | <span class="term-success">build-job: success</span> | <span class="term-success">deploy-job: success</span></div>
-                        <div class="term-line"><span class="term-cmd">$ kubectl get pods -n production</span></div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get pods -n alpha</span></div>
                         <div class="term-line text-muted">NAME                       READY   STATUS    RESTARTS   AGE</div>
                         <div class="term-line">web-app-848f95c5d-abcde    1/1     <span class="term-success">Running</span>   0          42s</div>
                         <div class="term-line">web-app-848f95c5d-fghij    1/1     <span class="term-success">Running</span>   0          42s</div>
                         <div class="term-line">web-app-848f95c5d-klmno    1/1     <span class="term-success">Running</span>   0          42s</div>
-                        <div class="term-line"><span class="term-cmd">$ kubectl get svc -n production</span></div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get svc -n alpha</span></div>
                         <div class="term-line text-muted">NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE</div>
                         <div class="term-line">web-service   ClusterIP   10.43.120.45    &lt;none&gt;        80/TCP     42s</div>
-                        <div class="term-line"><span class="term-cmd">$ kubectl get ingress -n production</span></div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get ingress -n alpha</span></div>
                         <div class="term-line text-muted">NAME          CLASS     HOSTS             ADDRESS        PORTS   AGE</div>
-                        <div class="term-line">web-ingress   traefik   husnafiryal.github.io           192.168.1.10   80      42s</div>
+                        <div class="term-line">web-ingress   traefik   una-cicd.apps.k3s.zauqilab.com   192.168.1.10   80      42s</div>
                         <div class="term-line"><span class="term-success">✓ Deployment fully validated</span></div>
                       </div>
                     </div>
@@ -311,14 +311,22 @@
                 </div>
                 
                 <!-- Case Study Highlights -->
-                <div class="case-study-highlights">
-                  <h4>Key Case Study Deliverables:</h4>
+                <div class="case-study-highlights" style="margin-top: 1.5rem;">
+                  <h4>My Contribution:</h4>
                   <ul>
-                    <li><strong>Reusable Pipeline Templates:</strong> Parameterized jobs for staging, testing, and deployment to decouple config overrides from scripts.</li>
-                    <li><strong>Dynamic Manifest Patching:</strong> Utilized `envsubst` to inject variables (`APP_KEY_VAR`, `DB_PASSWORD_VAR`) dynamically during pipeline evaluation.</li>
-                    <li><strong>Secure Access:</strong> Generated transient `ImagePullSecret` tokens to safely pull private images inside K3s.</li>
-                    <li><strong>Rollout Controls:</strong> Enforced automated `kubectl rollout restart` and status loops to ensure application availability.</li>
+                    <li><strong>Two-Repository Structure:</strong> Separated logic by building a central general pipeline repository referenced inside application repos using GitLab `include`.</li>
+                    <li><strong>Infrastructure Manifests:</strong> Wrote all multi-stage Dockerfiles and dry-run tested Kubernetes YAML manifests.</li>
+                    <li><strong>Secret Management:</strong> Secured private registry tokens inside GitLab CI/CD Variables, dynamically generating `ImagePullSecret` objects on deployment.</li>
+                    <li><strong>Ingress & DNS Setup:</strong> Fixed ingress path rules to map traffic correctly and expose the application via public URL endpoints.</li>
                   </ul>
+                </div>
+
+                <!-- What I Learned -->
+                <div class="case-study-highlights" style="margin-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                  <h4>What I Learned:</h4>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-top: 0.5rem;">
+                    Saya memahami cara memisahkan pipeline logic dari source code aplikasi, mengelola secret secara lebih aman melalui GitLab CI/CD Variables, dan menjalankan deployment Kubernetes secara otomatis.
+                  </p>
                 </div>
               </div>
 
