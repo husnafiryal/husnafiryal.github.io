@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una | IT Infrastructure & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Una (Husna Firyal Az-Zahra), an IT Infrastructure & DevOps Engineer specializing in Linux, networking, CI/CD, and cloud-native systems.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Atmospheres -->
+  <div class="bg-glow bg-glow-teal" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-amber" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Ribbon / Navbar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        una<span class="logo-dot">.</span>dev
+      </a>
+      
+      <!-- Desktop Menu -->
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu Icon -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12" class="line-mid"></line>
+          <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+          <line x1="3" y1="18" x2="21" y2="18" class="line-bot"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <nav class="nav-mobile">
+      <ul class="nav-mobile-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="main-content">
+    
+    <!-- 1. Hero Section -->
+    <section id="home" class="section hero-section">
+      <div class="container grid-2">
+        <!-- Hero Details Left -->
+        <div class="hero-details">
+          <div class="status-badge-container">
+            <span class="status-badge">
+              <span class="status-dot"></span>
+              Available to work
+            </span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I’m <span class="text-gradient-amber">Una</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Aspiring DevOps Engineer focused on CI/CD, Kubernetes, Docker, Linux, and Infrastructure Troubleshooting.
+          </p>
+          
+          <p class="hero-intro">
+            Telecommunication Engineering graduate transitioning into DevOps Engineering through Dibimbing.id DevOps Bootcamp. I build practical, documented, and automation-driven projects using GitLab CI/CD, Docker, Kubernetes, Linux, and cloud-native deployment workflows.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        
+        <!-- Hero Visual Right -->
+        <div class="hero-visual">
+        </div>
+      </div>
+      
+      <!-- Profile BG Wrapper (Aligned directly to the hero section container) -->
+      <div class="profile-bg-wrapper">
+        <img src="profile.jpg" alt="Una Portrait" class="profile-bg-image">
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="section about-section">
+      <div class="container container-narrow">
+        <h2 class="section-title">About Me</h2>
+        <div class="glass-card about-card">
+          <p class="about-text">
+            I am Husna Firyal Az-Zahra, an aspiring DevOps Engineer with a background in Telecommunication Engineering and practical experience in Linux, networking, infrastructure troubleshooting, containerization, and CI/CD automation. My current learning focus is building production-like DevOps workflows: containerizing applications with Docker, deploying workloads to Kubernetes, managing secrets securely, automating deployments through GitLab CI/CD, and troubleshooting infrastructure issues using a layer-based diagnostic approach.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Core Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">Core Skills</h2>
+        <div class="skills-grid">
+          <!-- Card 1 -->
+          <div class="glass-card skill-card">
+            <div class="skill-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3>CI/CD & Automation</h3>
+            <ul>
+              <li>GitLab CI/CD</li>
+              <li>Reusable Pipelines</li>
+              <li>Build & Deploy Stages</li>
+              <li>envsubst Templating</li>
+              <li>Rollout Automation</li>
+            </ul>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="glass-card skill-card">
+            <div class="skill-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <h3>Containers & Orchestration</h3>
+            <ul>
+              <li>Docker</li>
+              <li>Docker Compose</li>
+              <li>Kubernetes Clusters</li>
+              <li>K3s Setup</li>
+              <li>Traefik Ingress</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card skill-card">
+            <div class="skill-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            </div>
+            <h3>Linux & Troubleshooting</h3>
+            <ul>
+              <li>systemctl & journalctl</li>
+              <li>df, du, ncdu (Storage)</li>
+              <li>top, htop, ps (Processes)</li>
+              <li>pidstat, mpstat (CPU)</li>
+              <li>curl, dig, mtr (Network)</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="glass-card skill-card">
+            <div class="skill-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            </div>
+            <h3>Security & Config</h3>
+            <ul>
+              <li>Kubernetes Secrets</li>
+              <li>ConfigMaps</li>
+              <li>ImagePullSecret</li>
+              <li>CI/CD Variables</li>
+              <li>Environment variables</li>
+            </ul>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="glass-card skill-card">
+            <div class="skill-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3>Networking</h3>
+            <ul>
+              <li>DNS Resolution</li>
+              <li>TCP Operations</li>
+              <li>TLS Handshakes</li>
+              <li>Ingress Exposure</li>
+              <li>Latency Triage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Work & Case Studies</h2>
+        <!-- Projects Carousel Wrapper -->
+        <div class="projects-carousel-container">
+          <div class="carousel-track">
+            
+            <!-- Project 1 (Flagship) -->
+            <div class="glass-card project-card featured-project">
+              <div class="project-header">
+                <span class="project-badge">Flagship Project</span>
+                <h3>Centralized GitLab CI/CD Pipeline for Kubernetes Deployment</h3>
+              </div>
+              
+              <!-- Summary Container (Always Visible) -->
+              <div class="project-summary">
+                <div class="case-study-block">
+                  <span class="case-study-label">Problem</span>
+                  <p>Deploying containerized workloads to Kubernetes manually or through fragmented scripts leads to high deployment error rates, insecure secrets handling, and high operation latency across branch environments.</p>
+                </div>
+                
+                <div class="case-study-block">
+                  <span class="case-study-label">Outcome</span>
+                  <p>Enforced reproducible template pipelines across branches, securing variables, automating rollout deployments via CLI, and establishing ingress domain exposure within seconds.</p>
+                </div>
+
+                <div class="case-study-block">
+                  <span class="case-study-label">Tech Stack</span>
+                  <div class="project-tags">
+                    <span>GitLab CI/CD</span>
+                    <span>Docker</span>
+                    <span>GitLab Container Registry</span>
+                    <span>Kubernetes</span>
+                    <span>K3s</span>
+                    <span>Traefik Ingress</span>
+                    <span>Linux</span>
+                    <span>YAML</span>
+                    <span>Secrets</span>
+                    <span>ImagePullSecret</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Collapsible Details Container -->
+              <div id="project-1-collapsible" class="project-collapsible">
+                <div class="project-body grid-2">
+                  <div class="project-info">
+                    <div class="case-study-block">
+                      <span class="case-study-label">Solution</span>
+                      <p>Built a reusable centralized CI/CD pipeline using GitLab CI/CD to automate Docker image build, push to GitLab Container Registry, Kubernetes manifest injection, ImagePullSecret creation, and deployment to a K3s Kubernetes cluster.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="project-visuals">
+                    <!-- Static Flowchart -->
+                    <div class="flowchart-container">
+                      <span class="flowchart-title">Pipeline & Cluster Architecture Flow</span>
+                      <div class="flowchart">
+                        <div class="flow-step">Git Push</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">GitLab CI/CD</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">Docker Build</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">GitLab Registry</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">Kubernetes Secret</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">Kubernetes Deployment</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step">Traefik Ingress</div>
+                        <div class="flow-arrow">&rarr;</div>
+                        <div class="flow-step highlight">Live Web App</div>
+                      </div>
+                    </div>
+                    
+                    <!-- Terminal / Code Block (Recruiter Friendly) -->
+                    <div class="terminal-container">
+                      <div class="terminal-header">
+                        <div class="terminal-buttons">
+                          <span class="term-btn term-red"></span>
+                          <span class="term-btn term-yellow"></span>
+                          <span class="term-btn term-green"></span>
+                        </div>
+                        <span class="terminal-title">kubectl-deploy-verify.log</span>
+                      </div>
+                      <div class="terminal-body">
+                        <div class="term-line"><span class="term-info">pipeline: passed</span> | <span class="term-success">build-job: success</span> | <span class="term-success">deploy-job: success</span></div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get pods -n production</span></div>
+                        <div class="term-line text-muted">NAME                       READY   STATUS    RESTARTS   AGE</div>
+                        <div class="term-line">web-app-848f95c5d-abcde    1/1     <span class="term-success">Running</span>   0          42s</div>
+                        <div class="term-line">web-app-848f95c5d-fghij    1/1     <span class="term-success">Running</span>   0          42s</div>
+                        <div class="term-line">web-app-848f95c5d-klmno    1/1     <span class="term-success">Running</span>   0          42s</div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get svc -n production</span></div>
+                        <div class="term-line text-muted">NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE</div>
+                        <div class="term-line">web-service   ClusterIP   10.43.120.45    &lt;none&gt;        80/TCP     42s</div>
+                        <div class="term-line"><span class="term-cmd">$ kubectl get ingress -n production</span></div>
+                        <div class="term-line text-muted">NAME          CLASS     HOSTS             ADDRESS        PORTS   AGE</div>
+                        <div class="term-line">web-ingress   traefik   una.dev           192.168.1.10   80      42s</div>
+                        <div class="term-line"><span class="term-success">✓ Deployment fully validated</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Case Study Highlights -->
+                <div class="case-study-highlights">
+                  <h4>Key Case Study Deliverables:</h4>
+                  <ul>
+                    <li><strong>Reusable Pipeline Templates:</strong> Parameterized jobs for staging, testing, and deployment to decouple config overrides from scripts.</li>
+                    <li><strong>Dynamic Manifest Patching:</strong> Utilized `envsubst` to inject variables (`APP_KEY_VAR`, `DB_PASSWORD_VAR`) dynamically during pipeline evaluation.</li>
+                    <li><strong>Secure Access:</strong> Generated transient `ImagePullSecret` tokens to safely pull private images inside K3s.</li>
+                    <li><strong>Rollout Controls:</strong> Enforced automated `kubectl rollout restart` and status loops to ensure application availability.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Toggle Button Wrapper -->
+              <div class="project-toggle-container">
+                <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-1-collapsible">
+                  <span>View Case Study</span>
+                  <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="glass-card project-card">
+              <div class="project-header">
+                <span class="project-badge">Workload Orchestration</span>
+                <h3>High-Availability Kubernetes App Deployment with Traefik Ingress</h3>
+              </div>
+              
+              <!-- Summary Container (Always Visible) -->
+              <div class="project-summary">
+                <div class="case-study-block">
+                  <span class="case-study-label">Problem</span>
+                  <p>Deploying single-instance container workloads exposes applications to single-point-of-failure downtimes during node restarts, high traffic, or runtime crashes.</p>
+                </div>
+                
+                <div class="case-study-block">
+                  <span class="case-study-label">Outcome</span>
+                  <p>Achieved zero-downtime rolling updates and failover protection, verifying node statuses and service endpoints natively via CLI.</p>
+                </div>
+
+                <div class="case-study-block">
+                  <span class="case-study-label">Tech Stack</span>
+                  <div class="project-tags">
+                    <span>Kubernetes</span>
+                    <span>K3s</span>
+                    <span>Traefik</span>
+                    <span>Deployment</span>
+                    <span>Service</span>
+                    <span>Ingress</span>
+                    <span>ConfigMap</span>
+                    <span>Secret</span>
+                    <span>Resource Limits</span>
+                    <span>kubectl</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Collapsible Details Container -->
+              <div id="project-2-collapsible" class="project-collapsible">
+                <div class="project-body-split grid-2">
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Solution</span>
+                      <p>Deployed a containerized color application to a K3s Kubernetes cluster using Deployment, Service, ConfigMap/Secret, resource limits, 3 replicas, and Traefik Ingress.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Key Highlights</span>
+                      <ul class="highlights-list">
+                        <li>Scaled pods to 3 replicas with Anti-Affinity rules for cluster resilience.</li>
+                        <li>Designed resource request limits (CPU and Memory) to prevent node overload.</li>
+                        <li>Exposed app via Traefik Ingress with custom hostname bindings.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toggle Button Wrapper -->
+              <div class="project-toggle-container">
+                <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-2-collapsible">
+                  <span>View Case Study</span>
+                  <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="glass-card project-card">
+              <div class="project-header">
+                <span class="project-badge">Database & Containerization</span>
+                <h3>Dockerized Python Authentication App with PostgreSQL</h3>
+              </div>
+              
+              <!-- Summary Container (Always Visible) -->
+              <div class="project-summary">
+                <div class="case-study-block">
+                  <span class="case-study-label">Problem</span>
+                  <p>Local database and app instances frequently encounter environment discrepancies, dependency failures, and database boot latency timing-out the main application during startup.</p>
+                </div>
+                
+                <div class="case-study-block">
+                  <span class="case-study-label">Outcome</span>
+                  <p>Unified local development environments, preventing data loss during containers rebuild and exposing local services securely.</p>
+                </div>
+
+                <div class="case-study-block">
+                  <span class="case-study-label">Tech Stack</span>
+                  <div class="project-tags">
+                    <span>Docker</span>
+                    <span>Docker Compose</span>
+                    <span>Python</span>
+                    <span>PostgreSQL 15</span>
+                    <span>Docker Network</span>
+                    <span>Docker Volume</span>
+                    <span>Environment Variables</span>
+                    <span>Healthcheck</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Collapsible Details Container -->
+              <div id="project-3-collapsible" class="project-collapsible">
+                <div class="project-body-split grid-2">
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Solution</span>
+                      <p>Containerized a Python authentication app using Dockerfile and Docker Compose, connected it to PostgreSQL 15, configured Docker network, volume, environment variables, and database healthcheck.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Key Highlights</span>
+                      <ul class="highlights-list">
+                        <li>Optimized multi-stage Docker build to reduce production image size.</li>
+                        <li>Secured persistent data using named Docker volumes for PostgreSQL 15.</li>
+                        <li>Implemented db readiness check via `pg_isready` before launching the app.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toggle Button Wrapper -->
+              <div class="project-toggle-container">
+                <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-3-collapsible">
+                  <span>View Case Study</span>
+                  <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+              </div>
+            </div>
+  
+            <!-- Project 4 -->
+            <div class="glass-card project-card">
+              <div class="project-header">
+                <span class="project-badge">Linux & Triage</span>
+                <h3>Linux Infrastructure Troubleshooting Labs</h3>
+              </div>
+              
+              <!-- Summary Container (Always Visible) -->
+              <div class="project-summary">
+                <div class="case-study-block">
+                  <span class="case-study-label">Problem</span>
+                  <p>Production system incidents—such as depleted disk volumes, CPU-bound freezes, connection timeouts, and DNS resolution failures—frequently cause application downtime.</p>
+                </div>
+                
+                <div class="case-study-block">
+                  <span class="case-study-label">Outcome</span>
+                  <p>Restored system uptime and verified configuration settings, establishing system validation procedures for future deployments.</p>
+                </div>
+
+                <div class="case-study-block">
+                  <span class="case-study-label">Tech Stack</span>
+                  <div class="project-tags">
+                    <span>Linux</span>
+                    <span>systemctl</span>
+                    <span>journalctl</span>
+                    <span>df</span>
+                    <span>du</span>
+                    <span>ncdu</span>
+                    <span>top</span>
+                    <span>htop</span>
+                    <span>ps</span>
+                    <span>pidstat</span>
+                    <span>mpstat</span>
+                    <span>free</span>
+                    <span>pmap</span>
+                    <span>nginx</span>
+                    <span>ss</span>
+                    <span>curl</span>
+                    <span>dig</span>
+                    <span>mtr</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Collapsible Details Container -->
+              <div id="project-4-collapsible" class="project-collapsible">
+                <div class="project-body-split grid-2">
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Solution</span>
+                      <p>Completed infrastructure troubleshooting labs covering disk full incidents, high CPU usage, memory leak simulation, nginx connection refused, and API network latency analysis.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Troubleshooting Mindset & Highlights</span>
+                      <div class="mindset-flow">
+                        <span>Reproduce issue</span> &rarr; 
+                        <span>Inspect layer</span> &rarr; 
+                        <span>Collect evidence</span> &rarr; 
+                        <span>Identify root cause</span> &rarr; 
+                        <span>Remediate safely</span> &rarr; 
+                        <span>Verify recovery</span>
+                      </div>
+                      <ul class="highlights-list" style="margin-top: 0.75rem;">
+                        <li>Disk Full: Cleared space by triaging directories with `df -h` and `ncdu`.</li>
+                        <li>CPU/Memory Leak: Analyzed process RSS memory growth using `pmap` and `ps`.</li>
+                        <li>Connection Latency: Debugged nginx status, port bindings via `ss`, and mtr routing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toggle Button Wrapper -->
+              <div class="project-toggle-container">
+                <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-4-collapsible">
+                  <span>View Case Study</span>
+                  <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+              </div>
+            </div>
+  
+            <!-- Project 5 -->
+            <div class="glass-card project-card">
+              <div class="project-header">
+                <span class="project-badge">Git & Shell Scripting</span>
+                <h3>Git Branching Workflow and Basic GitLab CI/CD</h3>
+              </div>
+              
+              <!-- Summary Container (Always Visible) -->
+              <div class="project-summary">
+                <div class="case-study-block">
+                  <span class="case-study-label">Problem</span>
+                  <p>Concurrent engineering changes without branch controls risk overwriting stable environments, committing syntax bugs, and breaking production pipelines.</p>
+                </div>
+                
+                <div class="case-study-block">
+                  <span class="case-study-label">Outcome</span>
+                  <p>Reduced integration conflicts, validated shell script permissions, and automated version releases via pipeline triggers.</p>
+                </div>
+
+                <div class="case-study-block">
+                  <span class="case-study-label">Tech Stack</span>
+                  <div class="project-tags">
+                    <span>Git</span>
+                    <span>GitLab</span>
+                    <span>GitLab CI/CD</span>
+                    <span>Bash</span>
+                    <span>Branching Strategy</span>
+                    <span>Tags</span>
+                    <span>Releases</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Collapsible Details Container -->
+              <div id="project-5-collapsible" class="project-collapsible">
+                <div class="project-body-split grid-2">
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Solution</span>
+                      <p>Built a GitLab repository workflow using main/dev/uat/feature branches, basic CI/CD stages, semantic commits, shell script fixes, tags, and releases.</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="case-study-block">
+                      <span class="case-study-label">Key Highlights</span>
+                      <ul class="highlights-list">
+                        <li>Designed branch protections for staging (`uat`) and production (`main`).</li>
+                        <li>Wrote test, build, and deploy pipeline verification stages.</li>
+                        <li>Debugging shell permissions (`chmod +x`) and shebang path definitions.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Toggle Button Wrapper -->
+              <div class="project-toggle-container">
+                <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-5-collapsible">
+                  <span>View Case Study</span>
+                  <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls below cards -->
+        <div class="carousel-controls">
+          <button class="carousel-btn prev-btn" aria-label="Previous Project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <div class="carousel-dots">
+            <span class="carousel-dot active" data-slide="0" aria-label="Project 1 of 5"></span>
+            <span class="carousel-dot" data-slide="1" aria-label="Project 2 of 5"></span>
+            <span class="carousel-dot" data-slide="2" aria-label="Project 3 of 5"></span>
+            <span class="carousel-dot" data-slide="3" aria-label="Project 4 of 5"></span>
+            <span class="carousel-dot" data-slide="4" aria-label="Project 5 of 5"></span>
+          </div>
+          <button class="carousel-btn next-btn" aria-label="Next Project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <!-- Timeline Guide Line -->
+          <div class="timeline-line"></div>
+          
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Apr 2026 – Aug 2026 Expected</div>
+            <div class="glass-card timeline-card">
+              <h3>DevOps Engineer Bootcamp</h3>
+              <h4 class="timeline-company">Dibimbing.id</h4>
+              <p>Strengthening hands-on DevOps methodologies, systems engineering, Linux orchestration, infrastructure monitoring, automated testing, and CI/CD pipelines.</p>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jun 2025 – Aug 2025</div>
+            <div class="glass-card timeline-card">
+              <h3>IT Internship</h3>
+              <h4 class="timeline-company">Badak LNG</h4>
+              <p>Assisted in networking maintenance, local server configurations, monitoring network traffic logs, and hardware support operations within an enterprise industrial environment.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Feb 2025 – Jun 2025</div>
+            <div class="glass-card timeline-card">
+              <h3>Junior Cybersecurity Engineer</h3>
+              <h4 class="timeline-company">PT VINIX SEVEN AURUM</h4>
+              <p>Conducted vulnerability assessments using Nessus/OpenVAS, generated secure network flow diagrams, configured firewalls, and implemented router access controls (ACLs).</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Jan 2025 – Feb 2025</div>
+            <div class="glass-card timeline-card">
+              <h3>IT Internship</h3>
+              <h4 class="timeline-company">Badak LNG</h4>
+              <p>Supported server room infrastructure management, gathered operational parameters, and performed localized network node connection diagnostics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Education & Leadership Section -->
+    <section id="education" class="section education-section">
+      <div class="container grid-2">
+        <!-- Education Left -->
+        <div>
+          <h2 class="section-title">Education</h2>
+          <div class="glass-card education-card">
+            <div class="edu-header">
+              <span class="edu-date">2021 - 2025</span>
+              <h3>Bachelor of Telecommunication Engineering</h3>
+              <h4 class="edu-school">Telkom University</h4>
+              <span class="gpa-badge">GPA: 3.20 / 4.00</span>
+            </div>
+            <div class="edu-capstone">
+              <h5>Capstone Thesis:</h5>
+              <p class="capstone-title">Detection of Surface Height and River Water Flow Velocity Using Millimeter Wave FMCW Radar System</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Leadership Right -->
+        <div>
+          <h2 class="section-title">Leadership & Research</h2>
+          <div class="leadership-list">
+            <!-- Item 1 -->
+            <div class="glass-card leadership-card">
+              <span class="l-date">Adaptive Network Laboratory</span>
+              <h3>Research Team Coordinator</h3>
+              <p>Coordinated active student research projects, scheduled laboratory resource utilization, and organized knowledge sharing sessions on network automation.</p>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="glass-card leadership-card">
+              <span class="l-date">Adaptive Network Laboratory</span>
+              <h3>Research Assistant</h3>
+              <p>Conducted testing on network models, analyzed packets using Wireshark, and managed server configuration workloads for various laboratory assignments.</p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="glass-card leadership-card">
+              <span class="l-date">NetDevelopment</span>
+              <h3>Junior Research Assistant Internship</h3>
+              <p>Maintained scripts for network simulations, verified connectivity metrics, and documented engineering topologies.</p>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="glass-card leadership-card">
+              <span class="l-date">IEEE Telkom University Student Branch</span>
+              <h3>Secretary</h3>
+              <p>Managed administrative communications, recorded general assembly logs, and coordinated event approvals and technical documentation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid grid-2">
+          <!-- Contact Info Left -->
+          <div class="contact-info">
+            <h3>Husna Firyal Az-Zahra</h3>
+            <p>
+              Feel free to reach out to discuss Junior DevOps, infrastructure, or network engineering opportunities.
+            </p>
+            
+            <ul class="contact-links">
+              <li>
+                <a href="mailto:husnafiryal.azzahra@gmail.com" class="contact-link-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  husnafiryal.azzahra@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/husnafiryalazzahra/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  linkedin.com/in/husnafiryalazzahra/
+                </a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/unabletoproceed" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                  <!-- Custom SVG for Gitlab -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="m22 13.29-3.33-10a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.07.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-2.26 6.67H8.32L6.06 3.29a.42.42 0 0 0-.14-.18.38.38 0 0 0-.22-.07.39.39 0 0 0-.23.07.42.42 0 0 0-.14.18l-3.33 10a.42.42 0 0 0 0 .27l5.33 4 5.33 4 5.33-4 5.33-4a.42.42 0 0 0 0-.27z"></path></svg>
+                  gitlab.com/unabletoproceed
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/husnafiryal" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  github.com/husnafiryal
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Contact Form Right -->
+          <div class="glass-card contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Project Proposal">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Let's build something together..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copyright">&copy; 2026 una.dev. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to Top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
