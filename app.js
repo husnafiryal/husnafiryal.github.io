@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtns = document.querySelectorAll('.btn-project-toggle');
   toggleBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      const card = btn.closest('.project-card');
+      const card = btn.closest('.project-card') || btn.closest('.project-grid-card');
       if (!card) return;
       
       const isExpanded = card.classList.contains('expanded');
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const expandedCards = document.querySelectorAll('.project-card.expanded');
+          const expandedCards = document.querySelectorAll('.project-card.expanded, .project-grid-card.expanded');
           expandedCards.forEach(card => {
             card.classList.remove('expanded');
             const btn = card.querySelector('.btn-project-toggle');
