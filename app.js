@@ -267,6 +267,13 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 400);
         }
       });
+
+      // Update "View Full Image" link href to match the active slide
+      const activeImg = container.querySelector(`#${targetId} img`);
+      const fullViewBtn = container.querySelector('.btn-view-full');
+      if (activeImg && fullViewBtn) {
+        fullViewBtn.setAttribute('href', activeImg.getAttribute('src'));
+      }
     });
   });
 

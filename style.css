@@ -1461,3 +1461,30 @@ body {
   opacity: 1;
   transform: scale(1);
 }
+
+/* View Full Image Button style */
+.btn-view-full {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  background: rgba(2, 5, 9, 0.65);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  z-index: 10;
+}
+
+.btn-view-full:hover {
+  background: var(--bg-card-hover);
+  color: var(--teal-bright);
+  border-color: var(--teal-bright);
+  box-shadow: 0 0 8px var(--teal-glow);
+  transform: scale(1.05);
+}
