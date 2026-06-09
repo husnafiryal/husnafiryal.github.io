@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.0](https://github.com/husnafiryal/husnafiryal.github.io/compare/v1.2.0...v1.3.0) (2026-06-09)
+
+
+### Features
+
+* add full view picture button to interactive diagram switchers ([6c10a92](https://github.com/husnafiryal/husnafiryal.github.io/commit/6c10a925d618d30ec9a43a2ac96bbd35f9540b95))
+* remove GPA, update docker auth case study and visual switchers ([fc9c5ef](https://github.com/husnafiryal/husnafiryal.github.io/commit/fc9c5ef3fd4464fae61e3fa09745224f82bee1ea))
+* update Kubernetes HA deployment project details with switcher, screenshots, and repo links ([ec9af0c](https://github.com/husnafiryal/husnafiryal.github.io/commit/ec9af0c3c4fa4c89cb86a4efc762c28d66a8e36f))
+
 ## [1.2.0](https://github.com/husnafiryal/husnafiryal.github.io/compare/v1.1.0...v1.2.0) (2026-06-09)
 
 
