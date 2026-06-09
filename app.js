@@ -236,4 +236,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 7. Diagram Switcher Logic
+  const tabButtons = document.querySelectorAll('.diagram-tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      if (!targetId) return;
+
+      const container = btn.closest('.project-visuals') || btn.closest('.case-study-block');
+      if (!container) return;
+
+      // Toggle active states on buttons within this container
+      container.querySelectorAll('.diagram-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Toggle active states on slides within this container
+      container.querySelectorAll('.diagram-slide').forEach(slide => {
+        if (slide.id === targetId) {
+          slide.style.display = 'block';
+          // Force layout reflow to trigger transition
+          slide.offsetHeight;
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+          // Hide after transition ends (matching CSS transition length)
+          setTimeout(() => {
+            if (!slide.classList.contains('active')) {
+              slide.style.display = 'none';
+            }
+          }, 400);
+        }
+      });
+    });
+  });
+
 });

@@ -295,9 +295,20 @@
                 </ul>
               </div>
               <div class="case-study-block" style="text-align: center; margin-top: 1.5rem;">
-                <span class="case-study-label" style="display: block; margin-bottom: 0.75rem; text-align: left;">Pipeline Architecture Diagram</span>
-                <div class="diagram-container" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 0.5rem; overflow: hidden; max-width: 100%; margin: 0 auto;">
-                  <img src="pipeline_architecture.png" alt="GitLab CI/CD to Kubernetes Pipeline Architecture Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                <div class="diagram-switcher-tabs" style="margin-bottom: 1rem;">
+                  <button class="diagram-tab-btn active" data-target="diagram-arch-showcase">Detailed Architecture</button>
+                  <button class="diagram-tab-btn" data-target="diagram-flow-showcase">Simplified Flow</button>
+                </div>
+                
+                <div class="diagram-viewport" style="max-width: 600px; margin: 0 auto;">
+                  <!-- Slide 1 (Active) -->
+                  <div id="diagram-arch-showcase" class="diagram-slide active">
+                    <img src="pipeline_architecture.png" alt="Detailed Pipeline Architecture Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  </div>
+                  <!-- Slide 2 -->
+                  <div id="diagram-flow-showcase" class="diagram-slide">
+                    <img src="pipeline_flow.png" alt="Simplified Pipeline Execution Flow" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  </div>
                 </div>
               </div>
             </div>

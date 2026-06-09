@@ -280,10 +280,21 @@
                     </div>
                   </div>
                   
-                  <div class="project-visuals" style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center; align-items: center;">
-                    <span class="flowchart-title" style="font-weight: 600; color: var(--text-primary);">Pipeline Architecture Diagram</span>
-                    <div class="diagram-container" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-glass); border-radius: 12px; padding: 0.5rem; overflow: hidden; width: 100%;">
-                      <img src="pipeline_architecture.png" alt="GitLab CI/CD to Kubernetes Pipeline Architecture Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  <div class="project-visuals" style="display: flex; flex-direction: column; gap: 1rem; justify-content: flex-start; align-items: center; width: 100%;">
+                    <div class="diagram-switcher-tabs">
+                      <button class="diagram-tab-btn active" data-target="diagram-arch-home">Detailed Architecture</button>
+                      <button class="diagram-tab-btn" data-target="diagram-flow-home">Simplified Flow</button>
+                    </div>
+                    
+                    <div class="diagram-viewport">
+                      <!-- Slide 1 (Active) -->
+                      <div id="diagram-arch-home" class="diagram-slide active">
+                        <img src="pipeline_architecture.png" alt="Detailed Pipeline Architecture Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                      </div>
+                      <!-- Slide 2 -->
+                      <div id="diagram-flow-home" class="diagram-slide">
+                        <img src="pipeline_flow.png" alt="Simplified Pipeline Execution Flow" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                      </div>
                     </div>
                   </div>
                 </div>
