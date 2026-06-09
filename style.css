@@ -1397,6 +1397,17 @@ body {
   background: rgba(245, 158, 11, 0.08) !important;
 }
 
+/* GitHub Link Button hover states */
+.btn-github-link {
+  text-decoration: none;
+}
+.btn-github-link:hover {
+  border-color: var(--teal-bright) !important;
+  color: var(--teal-bright) !important;
+  box-shadow: 0 0 10px var(--teal-glow);
+  background: rgba(20, 184, 166, 0.08) !important;
+}
+
 /* Diagram Switcher Styles */
 .diagram-switcher-tabs {
   display: flex;

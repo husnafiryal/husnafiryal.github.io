@@ -427,27 +427,26 @@
           <div class="glass-card project-card project-grid-card" data-category="devops">
             <div class="project-header">
               <span class="project-badge">Database & Containerization</span>
-              <h3>Dockerized Python Authentication App with PostgreSQL</h3>
+              <h3>Dockerized Python Auth App with PostgreSQL</h3>
             </div>
             <div class="project-summary">
               <div class="case-study-block">
                 <span class="case-study-label">Problem</span>
-                <p>Local database and app instances frequently encounter environment discrepancies, dependency failures, and database boot latency timing-out the main application during startup.</p>
+                <p>Python web app needed consistent environment with PostgreSQL; manual setup was error-prone.</p>
               </div>
               <div class="case-study-block">
                 <span class="case-study-label">Outcome</span>
-                <p>Unified local development environments, preventing data loss during containers rebuild and exposing local services securely.</p>
+                <p>Dockerized application with database container, working locally and on CI/CD pipeline. Healthcheck added to prevent start failures.</p>
               </div>
               <div class="case-study-block">
                 <span class="case-study-label">Tech Stack</span>
                 <div class="project-tags">
                   <span>Docker</span>
                   <span>Docker Compose</span>
-                  <span>Python</span>
+                  <span>Python 3.11</span>
                   <span>PostgreSQL 15</span>
-                  <span>Docker Network</span>
-                  <span>Docker Volume</span>
-                  <span>Environment Variables</span>
+                  <span>Docker Networks</span>
+                  <span>Docker Volumes</span>
                   <span>Healthcheck</span>
                 </div>
               </div>
@@ -455,22 +454,60 @@
             <div id="grid-project-6-collapsible" class="project-collapsible">
               <div class="case-study-block">
                 <span class="case-study-label">Solution</span>
-                <p>Containerized a Python authentication app using Dockerfile and Docker Compose, connected it to PostgreSQL 15, configured Docker network, volume, environment variables, and database healthcheck.</p>
+                <p>Wrote Dockerfile and docker-compose.yml for app + database. Configured environment variables for database credentials. Added healthcheck to ensure app waits for DB readiness.</p>
               </div>
               <div class="case-study-block">
-                <span class="case-study-label">Key Highlights</span>
+                <span class="case-study-label">My Contributions</span>
                 <ul class="highlights-list">
-                  <li>Optimized multi-stage Docker build to reduce production image size.</li>
-                  <li>Secured persistent data using named Docker volumes for PostgreSQL 15.</li>
-                  <li>Implemented db readiness check via `pg_isready` before launching the app.</li>
+                  <li>Built Dockerfile, configured Compose network and volume.</li>
+                  <li>Implemented environment variables for DB connection.</li>
+                  <li>Verified app running on <code>localhost:8098</code>.</li>
                 </ul>
               </div>
+              <div class="case-study-block">
+                <span class="case-study-label">What I Learned</span>
+                <ul class="highlights-list">
+                  <li>Container orchestration basics with Docker Compose.</li>
+                  <li>Importance of service readiness for multi-container apps.</li>
+                </ul>
+              </div>
+              <div class="case-study-block" style="text-align: center; margin-top: 1.5rem;">
+                <div class="diagram-switcher-tabs" style="margin-bottom: 1rem;">
+                  <button class="diagram-tab-btn active" data-target="docker-compose-showcase">Docker Compose YAML</button>
+                  <button class="diagram-tab-btn" data-target="docker-app-showcase">Running App</button>
+                  <button class="diagram-tab-btn" data-target="docker-db-showcase">DB Container Logs</button>
+                </div>
+                
+                <div class="diagram-viewport" style="max-width: 600px; margin: 0 auto;">
+                  <!-- Slide 1 (Active) -->
+                  <div id="docker-compose-showcase" class="diagram-slide active">
+                    <img src="docker_compose_setup.png" alt="Docker Compose Setup Config Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  </div>
+                  <!-- Slide 2 -->
+                  <div id="docker-app-showcase" class="diagram-slide">
+                    <img src="docker_app_live.png" alt="Running App Screenshot" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  </div>
+                  <!-- Slide 3 -->
+                  <div id="docker-db-showcase" class="diagram-slide">
+                    <img src="docker_db_logs.png" alt="DB Container Logs Screenshot" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                  </div>
+                  
+                  <!-- View Full Image Button -->
+                  <a href="docker_compose_setup.png" target="_blank" class="btn-view-full" title="View Full Image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7M3 21l7-7"></path></svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="project-toggle-container">
+            <div class="project-toggle-container" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
               <button class="btn-project-toggle" aria-expanded="false" aria-controls="grid-project-6-collapsible">
                 <span>View Case Study</span>
                 <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </button>
+              <a href="https://github.com/husnafiryal/tugas-docker-auth" target="_blank" rel="noopener noreferrer" class="btn-project-toggle btn-github-link" style="border-color: var(--border-glass); color: var(--text-secondary);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--teal-bright);"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>View GitHub Repo</span>
+              </a>
             </div>
           </div>
 
