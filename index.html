@@ -334,54 +334,96 @@
                 
                 <div class="case-study-block">
                   <span class="case-study-label">Outcome</span>
-                  <p>Achieved zero-downtime rolling updates and failover protection, verifying node statuses and service endpoints natively via CLI.</p>
+                  <p>Achieved zero-downtime rolling updates and failover protection, verifying node statuses and service endpoints natively via CLI. Users could access the web app reliably across multiple replicas, and deployment updates were seamless.</p>
                 </div>
 
                 <div class="case-study-block">
                   <span class="case-study-label">Tech Stack</span>
                   <div class="project-tags">
-                    <span>Kubernetes</span>
-                    <span>K3s</span>
-                    <span>Traefik</span>
-                    <span>Deployment</span>
-                    <span>Service</span>
-                    <span>Ingress</span>
+                    <span>Kubernetes (K3s)</span>
+                    <span>Traefik Ingress</span>
+                    <span>Deployment manifest</span>
+                    <span>Service manifest</span>
+                    <span>Ingress manifest</span>
                     <span>ConfigMap</span>
                     <span>Secret</span>
                     <span>Resource Limits</span>
-                    <span>kubectl</span>
+                    <span>kubectl CLI</span>
                   </div>
                 </div>
               </div>
               
               <!-- Collapsible Details Container -->
               <div id="project-2-collapsible" class="project-collapsible">
-                <div class="project-body-split grid-2">
-                  <div>
+                <div class="project-body grid-2">
+                  <div class="project-info">
                     <div class="case-study-block">
                       <span class="case-study-label">Solution</span>
-                      <p>Deployed a containerized color application to a K3s Kubernetes cluster using Deployment, Service, ConfigMap/Secret, resource limits, 3 replicas, and Traefik Ingress.</p>
+                      <p>Created a Kubernetes Deployment with 3 replicas to ensure high availability. Exposed the app via Traefik Ingress controller with proper backend service routing. Configured environment variables using ConfigMap/Secret for dynamic app behavior. Applied resource requests and limits per pod to allow safe scheduling across nodes. Implemented a rolling updates strategy to avoid downtime during deployment changes.</p>
+                    </div>
+                    
+                    <div class="case-study-block">
+                      <span class="case-study-label">My Contributions</span>
+                      <ul class="highlights-list">
+                        <li>Wrote Deployment, Service, Ingress, ConfigMap, and Secret manifests.</li>
+                        <li>Configured environment variables for app customization.</li>
+                        <li>Verified high-availability deployment and traffic routing using <code>kubectl get pods</code> and <code>kubectl get svc</code>.</li>
+                        <li>Tested failover and rolling updates.</li>
+                        <li>Cleaned up cluster resources after testing.</li>
+                      </ul>
+                    </div>
+
+                    <div class="case-study-block">
+                      <span class="case-study-label">What I Learned</span>
+                      <ul class="highlights-list">
+                        <li>Linking Deployment, Service, and Ingress correctly is critical for HA workloads.</li>
+                        <li>Resource limits prevent cluster scheduling issues and pod eviction.</li>
+                        <li>Traefik Ingress simplifies routing and exposes apps securely.</li>
+                        <li>Rolling update strategies minimize downtime for users.</li>
+                      </ul>
                     </div>
                   </div>
-                  <div>
-                    <div class="case-study-block">
-                      <span class="case-study-label">Key Highlights</span>
-                      <ul class="highlights-list">
-                        <li>Scaled pods to 3 replicas with Anti-Affinity rules for cluster resilience.</li>
-                        <li>Designed resource request limits (CPU and Memory) to prevent node overload.</li>
-                        <li>Exposed app via Traefik Ingress with custom hostname bindings.</li>
-                      </ul>
+                  
+                  <div class="project-visuals" style="display: flex; flex-direction: column; gap: 1rem; justify-content: flex-start; align-items: center; width: 100%;">
+                    <div class="diagram-switcher-tabs">
+                      <button class="diagram-tab-btn active" data-target="k8s-arch-home">Architecture Diagram</button>
+                      <button class="diagram-tab-btn" data-target="k8s-live-home">Live App</button>
+                      <button class="diagram-tab-btn" data-target="k8s-pods-home">Replicas Status</button>
+                    </div>
+                    
+                    <div class="diagram-viewport">
+                      <!-- Slide 1 (Active) -->
+                      <div id="k8s-arch-home" class="diagram-slide active">
+                        <img src="k8s_ha_diagram.png" alt="Kubernetes HA Ingress Architecture Diagram" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                      </div>
+                      <!-- Slide 2 -->
+                      <div id="k8s-live-home" class="diagram-slide">
+                        <img src="k8s_live_app.png" alt="Live Web App running in browser" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                      </div>
+                      <!-- Slide 3 -->
+                      <div id="k8s-pods-home" class="diagram-slide">
+                        <img src="k8s_pods_status.png" alt="kubectl get pods output showing all replicas ready" style="width: 100%; height: auto; border-radius: 8px; display: block; object-fit: contain;">
+                      </div>
+                      
+                      <!-- View Full Image Button -->
+                      <a href="k8s_ha_diagram.png" target="_blank" class="btn-view-full" title="View Full Image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7M3 21l7-7"></path></svg>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
 
               <!-- Toggle Button Wrapper -->
-              <div class="project-toggle-container">
+              <div class="project-toggle-container" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <button class="btn-project-toggle" aria-expanded="false" aria-controls="project-2-collapsible">
                   <span>View Case Study</span>
                   <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
+                <a href="https://gitlab.com/tutorial-ci-dibimbing/husna-demo-project" target="_blank" rel="noopener noreferrer" class="btn-project-toggle btn-gitlab-link" style="border-color: var(--border-glass); color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--amber-bright);"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l2.76-8.49a.83.83 0 0 1 .79-.58h14.8a.83.83 0 0 1 .79.58l2.76 8.49a.84.84 0 0 1-.3.94z"></path></svg>
+                  <span>View GitLab Repo</span>
+                </a>
               </div>
             </div>
             
